@@ -15,7 +15,7 @@ As we get going, feel free to fork and mess around, if something is an improveme
 * There following data is stored in private.php and is excluded from this archive.
 	* The contents of the $email_list variable.
 
-## Requried Technology
+## Required Technology
 
 * WordPress running on a modern server
 * The Advanced Custom Forms plugin: http://www.advancedcustomfields.com/
