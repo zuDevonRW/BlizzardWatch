@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" style="margin-top: -15px;">
 	        <div class="row blizzardwatch-row blizzardwatch-row-space">
 		        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 	        </div>

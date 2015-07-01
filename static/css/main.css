@@ -39,10 +39,10 @@ a:hover {
 }
 
 .site-logo {
-    width: 300px;
-    max-width: 300px;
+    width: 230px;
+    max-width: 230px;
+    margin-top: 25px;
     height: auto;
-    padding: 0 10px 0 10px;
 }
 
 .main-content-area {
@@ -682,7 +682,7 @@ article.guide {
     float: right;
     width: 728px;
     height: 90px;
-    margin: 25px 0px 15px 15px;
+    margin: 35px 25px 15px 15px;
 }
 
 .bw_sidebar_ad_top {
