@@ -7,7 +7,7 @@ get_header();
 			<div class="row blizzardwatch-row article-content-area">
 				<div class="col-md-8">
 					<h1><?php echo ucwords( single_cat_title( '', false ) ); ?></h1>
-					<?php $bw->render_river( array( 2 ) ); ?>
+					<?php $bw->render_river( array( 2, 4, 6, 8 ) ); ?>
 
 					<div class="row blizzardwatch-row-space">
 						<div class="col-md-5" style="text-align: right;"><?php next_posts_link( '<span class="glyphicon glyphicon-menu-left"></span> Older Posts' ); ?></div>

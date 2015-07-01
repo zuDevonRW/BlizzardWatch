@@ -13,7 +13,7 @@ get_header();
 					</div>
 
 					<hr style="max-width: 675px; margin: 0 0 35px 0;" />
-					<?php $bw->render_river( array( 2 ) ); ?>
+					<?php $bw->render_river( array( 2, 4, 6, 8 ) ); ?>
 
 					<div class="row blizzardwatch-row-space">
 						<div class="col-md-5" style="text-align: right;"><?php next_posts_link( '<span class="glyphicon glyphicon-menu-left"></span> Older Posts' ); ?></div>
