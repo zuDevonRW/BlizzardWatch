@@ -42,6 +42,15 @@ function bw_h2_with_anchor( $atts ) {
 }
 add_shortcode( 'h2_with_anchor', 'bw_h2_with_anchor' );
 
+//Ad Manager
+acf_add_options_page(array(
+	'page_title'    => 'Ad Manager',
+	'menu_title'    => 'Ad Manager',
+	'menu_slug'     => 'bw-ad-manager',
+	'capability'    => 'edit_posts',
+	'redirect'      => false
+));
+
 //Front Content Page
 acf_add_options_page(array(
         'page_title'    => 'Homepage Manager',
