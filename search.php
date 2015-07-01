@@ -8,7 +8,7 @@ get_header();
 				<div class="col-md-8">
 					<h1>Search Results For: <?php echo ucwords( get_search_query() ); ?></h1>
 					<br />
-					<?php $bw->render_river( array( 2, 4, 6, 8 ) ); ?>
+					<?php $bw->render_river( array( 2, 4 ) ); ?>
 				</div>
 				<div class="col-md-4 sidebar">
 					<?php get_template_part( 'sidebar' ); ?>

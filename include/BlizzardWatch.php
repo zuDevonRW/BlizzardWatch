@@ -107,6 +107,9 @@ class BlizzardWatch {
 		$location_counter = 0;
 		global $wp_query;
 
+		// TODO: Don't do this. Override ad locations to force global rules.
+		$ad_locations = array( 2, 4 );
+
 		if( !is_array( $ad_locations ) ) {
 			$ad_locations = array();
 		}
