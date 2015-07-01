@@ -1,6 +1,6 @@
 # Blizzard Watch
 
-Copyright 2015 Interastrum, L.L.C.
+Copyright 2015 Interastrum, L.L.C. 
 
 For http://blizzardwatch.com/
 
