@@ -19,3 +19,4 @@ As we get going, feel free to fork and mess around, if something is an improveme
 
 * WordPress running on a modern server
 * The Advanced Custom Forms plugin: http://www.advancedcustomfields.com/
+* The Meta Slider plugin: https://www.metaslider.com/
