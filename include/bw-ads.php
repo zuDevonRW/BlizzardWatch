@@ -83,7 +83,11 @@ class Ads {
 					}
 					break;
 				case 'river_1':
-					$ad_code = '<div class="bw_river_1">' . get_field( 'river_1', 'option' ) . '</div>';
+					if( wp_is_mobile() ) {
+						$ad_code = '<div class="bw_river_1">' . get_field( 'river_1_mobile', 'option' ) . '</div>';
+					} else {
+						$ad_code = '<div class="bw_river_1">' . get_field( 'river_1', 'option' ) . '</div>';
+					}
 					break;
 				case 'mobile_1':
 					//$ad_code = '<div class="bw_mobile_1">' . get_field( 'mobile_1', 'option' ) . '</div>';
