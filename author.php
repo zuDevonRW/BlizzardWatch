@@ -5,7 +5,7 @@ get_header();
 	<div class="container-fluid">
 		<div class="row blizzardwatch-row blizzardwatch-row-single main-content-area">
 			<div class="row blizzardwatch-row article-content-area">
-				<div class="col-md-8">
+				<div class="col-md-8 col-sm-7">
 					<h1 style="margin-bottom: 35px;"><?php echo ucwords( get_the_author_meta( 'display_name' ) ); ?></h1>
 					<div class="row blizzardwatch-row-space author-row">
 						<div class="col-md-2"><?php echo get_avatar( get_the_author_meta('user_email'), '80', ''); ?></div>
@@ -20,7 +20,7 @@ get_header();
 						<?php previous_posts_link( '<div class="col-md-1" style="text-align: center;"> | </div><div class="col-md-6">Newer Posts <span class="glyphicon glyphicon-menu-right"></span></div>' ); ?>
 					</div>
 				</div>
-				<div class="col-md-4 sidebar">
+				<div class="col-md-4 col-sm-5 sidebar">
 					<?php get_template_part( 'sidebar' ); ?>
 				</div>
 			</div>
