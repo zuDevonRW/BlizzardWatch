@@ -332,7 +332,7 @@ class SearchWidget extends WP_Widget {
 	function widget( $args, $instance ) {
 		echo '
 			<div class="container-fluid">
-	            <div class="row blizzardwatch-row blizzardwatch-row-space" style="margin-top: 25px;">
+	            <div class="row blizzardwatch-row blizzardwatch-row-space" style="margin-top: 25px; margin-bottom: 0;">
 	                <div class="col-md-12">
 	                    <form action="/" method="get">
 	                        <div class="form-group has-feedback has-feedback-left">
