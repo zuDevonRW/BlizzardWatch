@@ -17,6 +17,9 @@ As we get going, feel free to fork and mess around, if something is an improveme
 
 ## Required Technology
 
-* WordPress running on a modern server
-* The Advanced Custom Forms plugin: http://www.advancedcustomfields.com/
-* The Meta Slider plugin: https://www.metaslider.com/
+* A relatively powerful server running the latest LAMP stack (or whatever configuration works for you)
+* WordPress
+* The following plugins:
+	* The Advanced Custom Forms plugin: http://www.advancedcustomfields.com/
+	* The Meta Slider plugin: https://www.metaslider.com/
+	* Revolution Slider: http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380
