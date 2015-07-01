@@ -304,3 +304,49 @@ function bw_hide_submitdiv_on_calendar() {
 	}
 }
 add_action( 'admin_menu', 'bw_hide_submitdiv_on_calendar' );
+
+
+add_action( 'widgets_init', 'register_search_widget' );
+
+function register_search_widget() {
+	register_widget( 'SearchWidget' );
+
+}
+
+class SearchWidget extends WP_Widget {
+
+	function __construct() {
+		parent::__construct( 'bw_search_widget', 'Search Widget for Sidebar',
+			array (
+				'description' => 'Displays the BW search box'
+			)
+		);
+	}
+
+	function form( $instance ) {
+	}
+
+	function update( $new_instance, $old_instance ) {
+	}
+
+	function widget( $args, $instance ) {
+		echo '
+			<div class="container-fluid">
+	            <div class="row blizzardwatch-row blizzardwatch-row-space" style="margin-top: 25px;">
+	                <div class="col-md-12">
+	                    <form action="/" method="get">
+	                        <div class="form-group has-feedback has-feedback-left">
+	                            <input type="text" name="s" class="form-control" placeholder="Search..." />
+	                            <span class="glyphicon glyphicon-search form-control-feedback search-icon-fix"></span>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+		';
+	}
+
+}
+
+//
+

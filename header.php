@@ -11,22 +11,6 @@
     </head>
     <body <?php body_class(); ?> >
         <div class="container-fluid">
-            <div class="row blizzardwatch-row blizzardwatch-row-space header">
-                <div class="col-md-8 header-left">
-
-                </div>
-                <div class="col-md-4 header-right" style="text-align: right;">
-                    <form action="/" method="get">
-                        <div class="form-group has-feedback has-feedback-left">
-                            <input type="text" name="s" class="form-control" placeholder="Search..." />
-                            <span class="glyphicon glyphicon-search form-control-feedback search-icon-fix"></span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid">
             <div class="row blizzardwatch-row blizzardwatch-row-space">
 	            <div class="col-md-12">
                     <a href="/"><img class="site-logo" src="/wp-content/themes/blizzardwatch/static/img/blizzard-watch.png" /></a>
