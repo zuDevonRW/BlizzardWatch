@@ -64,18 +64,16 @@ class Ads {
 					}
 					break;
 				case 'upper_sidebar':
-					if( wp_is_mobile() ) {
-						$ad_code = '<div class="bw_sidebar_ad_top">' . get_field('upper_sidebar_tablet', 'option') . '</div>';
-					} else {
-						$ad_code = '<div class="bw_sidebar_ad_top">' . get_field('upper_sidebar', 'option') . '</div>';
-					}
+					$ad_code = '<div class="bw_sidebar_ad_top">' . get_field('upper_sidebar', 'option') . '</div>';
 					break;
 				case 'lower_sidebar':
-					if( wp_is_mobile() ) {
-						$ad_code = '<div class="bw_sidebar_ad_bottom">' . get_field('lower_sidebar_tablet', 'option') . '</div>';
-					} else {
-						$ad_code = '<div class="bw_sidebar_ad_bottom">' . get_field('lower_sidebar', 'option') . '</div>';
-					}
+					$ad_code = '<div class="bw_sidebar_ad">' . get_field('lower_sidebar', 'option') . '</div>';
+					break;
+				case 'lower_sidebar_two':
+					$ad_code = '<div class="bw_sidebar_ad">' . get_field('lower_sidebar_two', 'option') . '</div>';
+					break;
+				case 'lower_sidebar_three':
+					$ad_code = '<div class="bw_sidebar_ad">' . get_field('lower_sidebar_three', 'option') . '</div>';
 					break;
 				case 'footer_1':
 					if( wp_is_mobile() ) {
@@ -123,6 +121,8 @@ class Ads {
 	public function register_widgets( ) {
 		register_widget( 'UpperSidebarWidget' );
 		register_widget( 'LowerSidebarWidget' );
+		register_widget( 'LowerSidebarWidgetTwo' );
+		register_widget( 'LowerSidebarWidgetThree' );
 	}
 
 	public function bw_ad_upper_sidebar( $args ) {
@@ -171,6 +171,50 @@ class LowerSidebarWidget extends WP_Widget {
 
 	function widget( $args, $instance ) {
 		echo Ads::get_instance()->render( 'lower_sidebar' );
+	}
+
+}
+
+class LowerSidebarWidgetTwo extends WP_Widget {
+
+	function __construct() {
+		parent::__construct( 'bw_ads_lower_sidebar_widget_two', 'Lower Sidebar Ads Two',
+			array (
+				'description' => 'Displays the second lower sidebar ad'
+			)
+		);
+	}
+
+	function form( $instance ) {
+	}
+
+	function update( $new_instance, $old_instance ) {
+	}
+
+	function widget( $args, $instance ) {
+		echo Ads::get_instance()->render( 'lower_sidebar_two' );
+	}
+
+}
+
+class LowerSidebarWidgetThree extends WP_Widget {
+
+	function __construct() {
+		parent::__construct( 'bw_ads_lower_sidebar_widget_three', 'Lower Sidebar Ads Three',
+			array (
+				'description' => 'Displays the third lower sidebar ad'
+			)
+		);
+	}
+
+	function form( $instance ) {
+	}
+
+	function update( $new_instance, $old_instance ) {
+	}
+
+	function widget( $args, $instance ) {
+		echo Ads::get_instance()->render( 'lower_sidebar_three' );
 	}
 
 }

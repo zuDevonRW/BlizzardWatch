@@ -691,15 +691,9 @@ article.guide {
     margin: 0 auto;
 }
 
-.bw_sidebar_ad_bottom {
+.bw_sidebar_ad {
     width: 300px;
-    height: 1500px;
-}
-
-@media only screen and (device-width: 768px) {
-    .bw_sidebar_ad_bottom {
-        width: 100%
-    }
+    margin: 0 auto;
 }
 
 @media only screen and (min-device-width : 320px) {
